@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Tech Stack Trivia</h1>
+    <p>Test your core web development & computing knowledge!</p>
+  </header>
+
+  <main class="quiz-container">
+    <!-- Active Quiz Card -->
+    <section id="quiz-card" class="card">
+      <div class="quiz-meta">
+        <span id="question-tracker">Question 1 of 4</span>
+        <span id="score-tracker">Score: 0</span>
+      </div>
+
+      <h2 id="question-text">Loading question...</h2>
+
+      <div id="options-grid" class="options-grid">
+        <!-- Buttons generated dynamically via script.js -->
+      </div>
+
+      <p id="feedback-msg" class="feedback-msg" aria-live="polite"></p>
+      <button id="next-btn" class="btn primary-btn hide">Next Question</button>
+    </section>
+
+    <!-- Results Card (Hidden by default) -->
+    <section id="results-card" class="card hide">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score-text">You scored 0 out of 4.</p>
+      <button id="restart-btn" class="btn primary-btn">Try Again</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Web Development II &bull; Canary Wharf</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
